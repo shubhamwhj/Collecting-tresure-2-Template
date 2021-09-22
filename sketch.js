@@ -21,7 +21,9 @@ function preload(){
 function setup(){
   
   createCanvas(400,600);
+  over = createSprite(100,280,20,20);
 // Moving background
+  
 path=createSprite(200,200);
 path.addImage(pathImg);
 path.velocityY = 4;
@@ -32,7 +34,7 @@ boy = createSprite(70,580,20,20);
 boy.addAnimation("SahilRunning",boyImg);
 boy.scale=0.08;
   
-over = createSprite(100,280,20,20);
+
 cashG=new Group();
 diamondsG=new Group();
 jwelleryG=new Group();
@@ -87,6 +89,7 @@ function draw() {
         swordGroup.setVelocityYEach(0);
         
         over.addAnimation("gameover",gover);
+        over.scale=0.7
      
     }
   }
