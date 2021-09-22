@@ -21,7 +21,6 @@ function preload(){
 function setup(){
   
   createCanvas(400,600);
-  over = createSprite(100,280,20,20);
 // Moving background
   
 path=createSprite(200,200);
@@ -88,7 +87,8 @@ function draw() {
         jwelleryG.setVelocityYEach(0);
         swordGroup.setVelocityYEach(0);
         
-        over.addAnimation("gameover",gover);
+         over = createSprite(100,280,20,20);
+         over.addAnimation("gameover",gover);
         over.scale=0.7
      
     }
