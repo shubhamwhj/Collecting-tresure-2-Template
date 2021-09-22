@@ -15,7 +15,7 @@ function preload(){
   diamondsImg = loadImage("diamonds.png");
   jwelleryImg = loadImage("jwell.png");
   swordImg = loadImage("sword.png");
-  swordImg = loadImage("gameOver.png");
+  gover = loadImage("gameOver.png");
 }
 
 function setup(){
@@ -32,7 +32,7 @@ boy = createSprite(70,580,20,20);
 boy.addAnimation("SahilRunning",boyImg);
 boy.scale=0.08;
   
-gover = createSprite(100,280,20,20);
+over = createSprite(100,280,20,20);
 cashG=new Group();
 diamondsG=new Group();
 jwelleryG=new Group();
