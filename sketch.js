@@ -16,6 +16,13 @@ function preload(){
   jwelleryImg = loadImage("jwell.png");
   swordImg = loadImage("sword.png");
   gover = loadImage("gameOver.png");
+  //Uncomment correct line of code to load the image named gameOver.png
+  
+  //gover=gameOver.png;
+  
+  //gameOver.png=Load();
+  
+  //gover = loadImage("gameOver.png");
 }
 
 function setup(){
@@ -86,10 +93,19 @@ function draw() {
         diamondsG.setVelocityYEach(0);
         jwelleryG.setVelocityYEach(0);
         swordGroup.setVelocityYEach(0);
-        
-         over = createSprite(180,280,20,20);
-         over.addAnimation("gameover",gover);
-        over.scale=0.7
+        //Uncomment correct section of code to display game over 
+
+        //  over = createSprite(880,9980,20,20);
+        //  over.addAnimation("gameover",gover);
+        //  over.scale=0.7
+
+        //  over = createSprite(180,280,20,20);
+        //  over.addAnimation("gameover",gover);
+        //  over.scale=0.7
+
+        //  over = createSprite(180,280,20,20);
+        //  over.addAnimation(gover);
+        //  over.scale=0.7
      
     }
   }
